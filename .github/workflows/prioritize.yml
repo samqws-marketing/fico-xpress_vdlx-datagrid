@@ -56,11 +56,11 @@ jobs:
           echo Unified Agent downloaded successfully
           java -jar wss-unified-agent.jar -appPath ./package.json -d ./ -viaDebug true
       
-    - name: 'Upload Prioritize Logs'
-      uses: actions/upload-artifact@v2
-      with:
-        name: Prioritize-Logs
-        path: |
-          /tmp/whitesource*
-          /tmp/ws-ua*
-        retention-days: 1
+      - name: 'Upload Prioritize Logs'
+        uses: actions/upload-artifact@v2
+        with:
+          name: Prioritize-Logs
+          path: |
+            /tmp/whitesource*
+            /tmp/ws-ua*
+          retention-days: 1
