@@ -54,4 +54,13 @@ jobs:
         run: |
           curl -LJO https://unified-agent.s3.amazonaws.com/wss-unified-agent.jar
           echo Unified Agent downloaded successfully
-          java -jar wss-unified-agent.jar -appPath ./package.json -d ./
+          java -jar wss-unified-agent.jar -appPath ./package.json -d ./ -viaDebug true
+      
+    - name: 'Upload Prioritize Logs'
+      uses: actions/upload-artifact@v2
+      with:
+        name: Prioritize-Logs
+        path: |
+          /tmp/whitesource*
+          /tmp/ws-ua*
+        retention-days: 1
