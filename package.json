@@ -54,7 +54,7 @@
     "mkdirp": "^1.0.4",
     "parcel-bundler": "^1.12.4",
     "parcel-plugin-wrapper": "^0.2.2",
-    "postcss-modules": "^1.5.0",
+    "postcss-modules": "^2.0.0",
     "rimraf": "^3.0.2",
     "sass": "^1.26.5",
     "tabulator-tables": "^4.6.3"
